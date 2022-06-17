@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY . .
 
-RUN GOOS=linux go build -o ./bin/server ./cmd/*.go
+RUN GOOS=linux go build -o ./bin/server ./cmd/app/*.go
 
 FROM alpine:3.15
 
